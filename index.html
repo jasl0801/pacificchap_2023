@@ -1,50 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Pacific Trails Resort</title>
-<meta charset="utf-8">
-<link href="pacific.css" rel="stylesheet">
-</head>
-<body>
-<div id="wrapper">
-  <header>
-    <h1><a href="index.html">Pacific Trails Resort</a></h1>
-  </header>
-  <nav>
-    <ul>
-    <li><a href="index.html">Home</a><li>  
-    <li><a href="yurts.html">Yurts</a><li>  
-    <li><a href="activities.html">Activities</a><li>  
-    <li><a href="reservations.html">Reservations</a><li>
-    </ul>
-  </nav>
-  <div id="homehero">
-  </div>
-  <main>
-    <h2>Enjoy Nature in Luxury</h2>
-    <p><span class="resort">Pacific Trails Resort</span> on the California North Coast offers panoramic views of the Pacific Ocean.
-Our guests experience an opulent camping adventure in sumptuously appointed private yurts 
-featuring a gas fireplace, king-size bed, and private deck.
-    </p>
-    <ul>
-      <li>Unwind in the heated outdoor pool and whirlpool</li>
-      <li>Explore the coast on your own or join our guided tours</li>
-      <li>Start the day with a complimentary cooked-to-order breakfast</li>
-      <li>Relax in our lodge while enjoying complimentary appetizers and beverages</li>
-      <li>Savor nightly fine dining with an ocean view</li>
-    </ul>
-    <div>
-    <span class="resort">Pacific Trails Resort</span><br>
-12456 Pacific Trails Road<br>
-Zephyr, CA 95555<br><br>
-888-555-5555<br><br>
-    </div>
-  </main>
-  <footer>
-Copyright &copy; 2020 Pacific Trails Resort<br>
-<a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
-  </footer>
-</div>
-</body>
-</html>
-
+* {box-sizing: border-box;}
+body { 
+background-color: #EAEAEA;
+color: #666666;  
+font-family: Verdana, Arial, sans-serif;
+}
+#wrapper { 
+background-color: #FFFFFF;
+background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+background-repeat: no-repeat; 
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+min-width: 960px;
+max-width: 2048px;
+box-shadow: 3px 3px 3px #777;
+}
+header { 
+background-color: #002171;
+color: #FFFFFF;
+font-family: Georgia, serif;
+height: 120px;
+}
+header a { text-decoration: none;}
+header a:link { color:#FFFFFF;}
+header a:visited { color: #FFFFFF;}
+header a:hover {color: #90C7E3;}
+h1 { 
+font-size: 3em;
+  letter-spacing: 0.25em;
+  text-align: center;
+  padding-top: .5em;
+}
+h2 { 
+color: #1976D2;
+font-family: Georgia, serif; 
+}
+h3 { font-family: Georgia, serif; }
+nav { 
+float: left;
+ font-size: 1.2em;
+  font-weight: bold;
+  padding: 0;
+  position: fixed;
+  width: 160px;
+}
+nav a { text-decoration: none; }
+nav a:link { color: #5C7FA3;}
+nav a:visited { color: #344873;}
+nav a: hover { color: #A52A2A;}
+nav ul{
+  list-style-type: none;
+  padding-left: 1em; 
+}
+main { 
+background-color: #FFF;
+  display: block;
+  margin-left: 170px;
+  overflow: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+dt { 
+color: #002171;
+font-weight: bold;
+}
+.resort { 
+color: #1976D2;
+font-size: 1.2em;
+}
+#homehero { 
+height: 300px;
+background-image: url(coast.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%; 
+}
+#yurthero { 
+height: 300px;
+background-image: url(yurt.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%; 
+}
+#trailhero { 
+height: 300px;
+background-image: url(trail.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+  margin-left: 170px;
+}			
+section {
+  float: left;
+  padding-left: 2em;
+  padding-rgiht: 2em;
+  width: 33%
+}
+footer { 
+  background-color: #FFF;
+font-size: .70em;
+font-style: italic;
+text-align: center;
+padding: 1em;
+  text-align: center;
+}
